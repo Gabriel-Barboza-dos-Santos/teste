@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Projeto Calculadoras </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/code.js">
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron">
+            <h1> calculadora </h1>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button type="button" name="button" class="btn btn-info" data-toggle="modal" data-target="#flex">Calculadora combustivel</button>
+        </div>
+        <div class="col-md-6">
+          <button type="button" name="button" class="btn btn-info" data-toggle="modal" data-target="#festa">Calculadora Festa</button>
+        </div>
+      </div>
+    </div>
+
+            <div class="modal" id="flex" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" name="button" class="close" data-dismiss="modal"> <span class="glyphicon glyphicon-remove"></span> </button>
+                    <h5 class="modal-title"> Calculadora de Combustível </h5>
+                  </div>
+
+                  <div class="modal-body">
+                    <form>
+                      <label for="alcool">Álcool:</label>
+                      <input type="number" name="alcool" id="alcool" class="form-control">
+                      <label for="gasolina">Gasolina:</label>
+                      <input type="number" name="gasolina" id="gasolina" class="form-control">
+                      <label for="result">Resultado:</label>
+                      <input type="text" name="" disabled id="result" class="form-control">
+                    </form>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" name="button" class= "btn btn-info" data-dismiss="modal"> Fechar </button>
+                    <button type="button" name="button" class=  "btn btn-info" id="calc"> Calcular </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+                <div class="modal" id="festa" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <button type="button" name="button" class="close" data-dismiss="modal"> <span class="glyphicon glyphicon-remove"></span> </button>
+                        <h5 class="modal-title"> Calculadora de Festa </h5>
+                      </div>
+
+                      <div class="modal-body">
+                        <form>
+                          <label for="people">Quantidade de Pessoas:</label>
+                          <input type="number" name="people" id="people" class="form-control">
+                          <p></p>
+                          <h5>Lista do que vai ter na Festa</h5>
+                          <label for="refri">Refrigerante:</label>
+                          <input type="text" name="refri" id="refri" disabled class="form-control">
+                          <label for="agua">Água:</label>
+                          <input type="text" name="agua" disabled id="agua" disabled class="form-control">
+                          <label for="bolo">Bolo:</label>
+                          <input type="text" name="bolo" disabled id="bolo" disabled class="form-control">
+                          <label for="doce">Doces:</label>
+                          <input type="text" name="doce" disabled id="doce" disabled class="form-control">
+                          <label for="salgado">Salgado:</label>
+                          <input type="text" name="salgado" disabled id="salgado" disabled class="form-control">
+                        </form>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" name="button" class="btn btn-info" data-dismiss="modal"> Fechar </button>
+                        <button type="button" name="button" class="btn btn-info" id="calcular"> Calcular </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+  </body>
+</html>
